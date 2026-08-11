@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyrule Compendium — Todos los juegos de The Legend of Zelda</title>
+<meta name="description" content="La enciclopedia completa de todos los juegos de The Legend of Zelda: 1986 a 2024, líneas de tiempo, consolas y datos de cada título.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polygon points='50,5 93,75 7,75' fill='%23d4af37'/></svg>">
+</head>
+<body>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="triforce triforce-1"></div>
+    <div class="triforce triforce-2"></div>
+    <div class="triforce triforce-3"></div>
+  </div>
+  <nav class="nav">
+    <a class="nav-brand" href="#top">
+      <svg viewBox="0 0 100 100" width="28" height="28" aria-hidden="true">
+        <polygon points="50,5 93,75 7,75" fill="#d4af37"/>
+        <polygon points="50,35 68,66 32,66" fill="#0a0e14"/>
+      </svg>
+      <span>Hyrule Compendium</span>
+    </a>
+    <div class="nav-links">
+      <a href="#timeline">Línea de tiempo</a>
+      <a href="#games">Juegos</a>
+      <a href="#stats">Datos</a>
+      <a href="#spinoffs">Spin-offs</a>
+    </div>
+  </nav>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">1986 — 2024 · 39 años de leyenda</p>
+    <h1>La historia completa de<br><span class="gold-text">The Legend of Zelda</span></h1>
+    <p class="hero-sub">Del Famicom Disk System al Nintendo Switch 2: todos los títulos de la saga más longeva del action-adventure, en un solo lugar.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#games">Explorar los juegos</a>
+      <a class="btn btn-ghost" href="#timeline">Ver línea de tiempo</a>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">▾</div>
+  </div>
+</header>
+
+<!-- ===== STATS ===== -->
+<section class="stats" id="stats">
+  <div class="stat"><span class="stat-num" data-count="33">0</span><span class="stat-label">Juegos en la saga</span></div>
+  <div class="stat"><span class="stat-num" data-count="21">0</span><span class="stat-label">Títulos originales</span></div>
+  <div class="stat"><span class="stat-num" data-count="39">0</span><span class="stat-label">Años de historia</span></div>
+  <div class="stat"><span class="stat-num" data-count="9">0</span><span class="stat-label">Generaciones de consolas</span></div>
+</section>
+
+<!-- ===== TIMELINE ===== -->
+<section class="section" id="timeline">
+  <div class="section-head">
+    <p class="eyebrow">La cronología</p>
+    <h2>Seis eras de Hyrule</h2>
+    <p class="section-sub">De la espada maestra al reino salvaje: cómo evolucionó la saga a través de las décadas.</p>
+  </div>
+  <div class="timeline" id="timelineRoot"><!-- JS render --></div>
+</section>
+
+<!-- ===== GAMES ===== -->
+<section class="section section-dark" id="games">
+  <div class="section-head">
+    <p class="eyebrow">El compendio</p>
+    <h2>Todos los juegos</h2>
+    <p class="section-sub">21 títulos originales + remakes y ports. Filtra por era o consola.</p>
+  </div>
+  <div class="filters" id="filters">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="classic">Era clásica</button>
+    <button class="filter-btn" data-filter="n64">Era 3D</button>
+    <button class="filter-btn" data-filter="portable">Era portátil</button>
+    <button class="filter-btn" data-filter="modern">Era moderna</button>
+    <button class="filter-btn" data-filter="openworld">Era open-world</button>
+    <button class="filter-btn" data-filter="remake">Remakes</button>
+  </div>
+  <div class="games-grid" id="gamesGrid"><!-- JS render --></div>
+
+  <div class="section-head" style="margin-top: 80px">
+    <p class="eyebrow">Remakes y ports</p>
+    <h3 style="font-family:'Cinzel',serif;font-size:1.6rem">Los clásicos, rehechos</h3>
+  </div>
+  <div class="spinoffs-grid" id="remakesGrid"><!-- JS render --></div>
+</section>
+
+<!-- ===== SPINOFFS ===== -->
+<section class="section" id="spinoffs">
+  <div class="section-head">
+    <p class="eyebrow">Más allá de la saga principal</p>
+    <h2>Spin-offs y curiosidades</h2>
+    <p class="section-sub">Musou, ritmo, CD-i y más: las ramas raras del árbol de Hyrule.</p>
+  </div>
+  <div class="spinoffs-grid" id="spinoffsGrid"><!-- JS render --></div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <svg viewBox="0 0 100 100" width="40" height="40" aria-hidden="true">
+      <polygon points="50,5 93,75 7,75" fill="#d4af37"/>
+      <polygon points="50,35 68,66 32,66" fill="#0a0e14"/>
+    </svg>
+    <p>Hyrule Compendium — hecho con ❤️ y una ocarina</p>
+    <p class="footer-note">Fan-made. No afiliado a Nintendo. The Legend of Zelda es © Nintendo.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
